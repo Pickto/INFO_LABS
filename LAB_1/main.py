@@ -1,9 +1,11 @@
 import config
 
+
 def main():
     value = input()
     base = int(input())
     print(translate_from(value, base))
+
 
 def translate_to(value, base):
     int_part = int(value)
@@ -23,6 +25,7 @@ def translate_to(value, base):
     else:
         return int(res_int_part[::-1])
 
+
 def translate_from(value, base):
     value = value.split(".")
     int_part = value[0]
@@ -41,9 +44,6 @@ def translate_from(value, base):
         res_float_part += config.enum[number] * pow(base, -i)
         i += 1
     return res_int_part + res_float_part
-
-
-
 
 
 if __name__ == "__main__":

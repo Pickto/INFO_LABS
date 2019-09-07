@@ -10,7 +10,7 @@ map<char, int> enum_num = { {0 , '0'}, {1 , '1'}, {2, '2'}, {3, '3'}, {4, '4'}, 
 map<char, int> enum_lit = { {'0' , 0}, {'1' , 1}, {'2', 2}, {'3', 3}, {'4', 4}, {'5', 5}, {'6', 6}, {'7', 7},
 						{'8', 8}, {'9', 9}, {'A', 10}, {'B', 11}, {'C', 12}, {'D', 13}, {'E', 14}, {'F', 15} };
 
-double trans_to(double value, int base)
+string trans_to(double value, int base)
 {
 	int int_part = int(value);
 	double double_part = value - int(value);
@@ -43,14 +43,15 @@ double trans_to(double value, int base)
 	if (res[res.size() - 1] == '.')
 		res[res.size() - 1] = '\0';
 
-	return atof(res.c_str());
+	return res;
 }
 
 double trans_from(string value, int base)
 {
+
 	int num_dot = value.find('.');
 	string int_part = value.substr(0, num_dot);
-	string double_part = value.substr(num_dot + 1, value.size() - 1);
+	string double_part = num_dot != -1 ? value.substr(num_dot + 1, value.size() - 1) : "";
 
 	double res = 0.0;
 
@@ -76,17 +77,58 @@ double trans_from(string value, int base)
 	return res;
 }
 
+string sum(string first_value, string second_value, int base)
+{
+	if (base == 10)
+		return to_string(atof(first_value.c_str()) + atof(second_value.c_str()));
+
+	double dfirst_value, dsecond_value;
+
+	dfirst_value = trans_from(first_value, base);
+	dsecond_value = trans_from(second_value, base);
+
+	return trans_to(dfirst_value + dsecond_value, base);
+}
+
+string mult(string first_value, string second_value, int base)
+{
+	if (base == 10)
+		return to_string(atof(first_value.c_str()) * atof(second_value.c_str()));
+
+	double dfirst_value, dsecond_value;
+
+	dfirst_value = trans_from(first_value, base);
+	dsecond_value = trans_from(second_value, base);
+
+	return trans_to(dfirst_value * dsecond_value, base);
+}
+
+string calc(string first_value, string second_value, int base, char sign)
+{
+	switch (sign)
+	{
+	case '-':
+	case '+':
+		return sum(first_value, sign + second_value, base);
+		break;
+	case '*':
+		return mult(first_value, sign + second_value, base);
+		break;
+	default:
+		return "Unexpected sign";
+		break;
+	}
+}
+
 int main()
 {
-	string x;
-	double res;
+	string first_value, second_value;
+	char sign;
 	int base;
 
-	cin >> x >> base;
+	cin >> base >> first_value >> sign >>  second_value;
 
-	res = trans_from(x, base);
-
-	printf_s("%.10f", res);
+	cout << calc(first_value, second_value, base, sign) << endl;
 
 	system("pause");
 	return 0;

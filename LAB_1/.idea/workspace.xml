@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e012302-5098-4885-bb42-a54b305e7520" name="Default Changelist" comment="" />
+    <list default="true" id="2e012302-5098-4885-bb42-a54b305e7520" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/INFO_LABS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/INFO_LABS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/.vs/INFORMATICA_PRACTICA_1/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/.vs/INFORMATICA_PRACTICA_1/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/.vs/INFORMATICA_PRACTICA_1/v15/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/.vs/INFORMATICA_PRACTICA_1/v15/Browse.VC.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/.vs/INFORMATICA_PRACTICA_1/v15/Browse.VC.opendb" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/.vs/INFORMATICA_PRACTICA_1/v15/Browse.VC.opendb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/Debug/INFORMATICA_PRACTICA_1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/Debug/INFORMATICA_PRACTICA_1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/Debug/INFORMATICA_PRACTICA_1.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/Debug/INFORMATICA_PRACTICA_1.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/Debug/INFORMATICA_PRACTICA_1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/Debug/INFORMATICA_PRACTICA_1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/INFORMATICA_PRACTICA_1.lastbuildstate" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/INFORMATICA_PRACTICA_1.lastbuildstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMAT.3B436E36.tlog/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMATICA_PRACTICA_1.log" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/INFORMATICA_PRACTICA_1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/main.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/vc141.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/vc141.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/vc141.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/Debug/vc141.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../LAB_1_cpp/INFORMATICA_PRACTICA_1/INFORMATICA_PRACTICA_1/main.cpp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +38,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1QUlIU9nmuyZLRdifTN5anqMxYq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -31,7 +59,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="INFO_LABS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="INFO_LABS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -56,6 +105,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.config" />
       </list>
     </recent_temporary>
   </component>
@@ -71,5 +121,26 @@
       <updated>1567832976135</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="config.enum_lit[0]" language="Python" />
+        <watch expression="int(value)" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
