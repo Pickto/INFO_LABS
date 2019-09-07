@@ -103,13 +103,28 @@ string mult(string first_value, string second_value, int base)
 	return trans_to(dfirst_value * dsecond_value, base);
 }
 
+string diff(string first_value, string second_value, int base)
+{
+	if (base == 10)
+		return to_string(atof(first_value.c_str()) - atof(second_value.c_str()));
+
+	double dfirst_value, dsecond_value;
+
+	dfirst_value = trans_from(first_value, base);
+	dsecond_value = trans_from(second_value, base);
+
+	return trans_to(dfirst_value - dsecond_value, base);
+}
+
 string calc(string first_value, string second_value, int base, char sign)
 {
 	switch (sign)
 	{
 	case '-':
+		return diff(first_value, second_value, base);
+		break;
 	case '+':
-		return sum(first_value, sign + second_value, base);
+		return sum(first_value, second_value, base);
 		break;
 	case '*':
 		return mult(first_value, sign + second_value, base);
