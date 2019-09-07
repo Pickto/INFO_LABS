@@ -49,12 +49,22 @@ def translate_from(value, base):
 
 
 def calc(first_value, second_value, base, sign):
-    if sign == '+' or sign == '-':
-        return sum(first_value, sign + second_value, base)
+    if sign == '+':
+        return sum(first_value, second_value, base)
     elif sign == '*':
         return mult(first_value, second_value, base)
+    elif sign == '-':
+        return diff(first_value, second_value, base)
     else:
         return "Unexpected sign"
+
+
+def diff(first_value, second_value, base):
+    if base == 10:
+        return int(first_value) - int(second_value)
+    first_value = translate_from(first_value, base)
+    second_value = translate_from(second_value, base)
+    return translate_to(first_value - second_value, base)
 
 
 def mult(first_value, second_value, base):
