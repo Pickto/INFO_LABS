@@ -9,6 +9,7 @@ def main():
     print(calc(value1, value2, base, sign))
 
 
+
 def translate_to(value, base):
     int_part = int(float(value))
     float_part = float(value) - int_part
@@ -26,6 +27,7 @@ def translate_to(value, base):
         return res_int_part[::-1] + "0." + res_float_part
     else:
         return res_int_part[::-1]
+
 
 
 def translate_from(value, base):
@@ -74,7 +76,7 @@ def mult(first_value, second_value, base):
     second_value = translate_from(second_value, base)
     return translate_to(first_value * second_value, base)
 
-
+  
 def sum(first_value, second_value, base):
     if base == 10:
         return int(first_value) + int(second_value)
