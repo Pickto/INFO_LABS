@@ -2,11 +2,16 @@ import config
 
 
 def main():
-    base = int(input())
-    value1 = input()
-    sign = input()
-    value2 = input()
-    print(calc(value1, value2, base, sign))
+    while True:
+        command = input().split(" ")
+        if command[0] == "to":
+            translate_to(command[1], int(command[2]))
+        elif command[0] == "from":
+            translate_from(command[1], int(command[2]))
+        elif command[0] == "calc":
+            calc(command[1], command[3], command[4], command[2])
+        elif command[0] == "quit":
+            break
 
 
 
