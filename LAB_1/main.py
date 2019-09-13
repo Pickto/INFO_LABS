@@ -9,10 +9,9 @@ def main():
         elif command[0] == "from":
             print(translate_from(command[1], int(command[2])))
         elif command[0] == "calc":
-            print(calc(command[1], command[3], command[4], command[2]))
+            print(calc(command[1], command[3], int(command[4]), command[2]))
         elif command[0] == "quit":
             break
-
 
 
 def translate_to(value, base):
@@ -32,7 +31,6 @@ def translate_to(value, base):
         return res_int_part[::-1] + "." + res_float_part
     else:
         return res_int_part[::-1]
-
 
 
 def translate_from(value, base):
