@@ -5,11 +5,11 @@ def main():
     while True:
         command = input().split(" ")
         if command[0] == "to":
-            translate_to(command[1], int(command[2]))
+            print(translate_to(command[1], int(command[2])))
         elif command[0] == "from":
-            translate_from(command[1], int(command[2]))
+            print(translate_from(command[1], int(command[2])))
         elif command[0] == "calc":
-            calc(command[1], command[3], command[4], command[2])
+            print(calc(command[1], command[3], command[4], command[2]))
         elif command[0] == "quit":
             break
 
@@ -29,7 +29,7 @@ def translate_to(value, base):
         float_part = float_part * base - int(float_part * base)
         i += 1
     if float("0." + res_float_part) != 0:
-        return res_int_part[::-1] + "0." + res_float_part
+        return res_int_part[::-1] + "." + res_float_part
     else:
         return res_int_part[::-1]
 
