@@ -7,7 +7,11 @@ def main():
         if command[0] == "to":
             print(translate_to(command[1], int(command[2])))
         elif command[0] == "from":
+<<<<<<< Updated upstream
             print(translate_from(command[1], int(command[2])))
+=======
+           print(translate_from(command[1], int(command[2])))
+>>>>>>> Stashed changes
         elif command[0] == "calc":
             print(calc(command[1], command[3], int(command[4]), command[2]))
         elif command[0] == "quit":
@@ -69,7 +73,7 @@ def diff(first_value, second_value, base):
         return int(first_value) - int(second_value)
     first_value = translate_from(first_value, base)
     second_value = translate_from(second_value, base)
-    return translate_to(first_value - second_value, base)
+    return translate_to(str(first_value - second_value), base)
 
 
 def mult(first_value, second_value, base):
@@ -77,7 +81,7 @@ def mult(first_value, second_value, base):
         return int(first_value) * int(second_value)
     first_value = translate_from(first_value, base)
     second_value = translate_from(second_value, base)
-    return translate_to(first_value * second_value, base)
+    return translate_to(str(first_value * second_value), base)
 
   
 def sum(first_value, second_value, base):
@@ -85,7 +89,7 @@ def sum(first_value, second_value, base):
         return int(first_value) + int(second_value)
     first_value = translate_from(first_value, base)
     second_value = translate_from(second_value, base)
-    return translate_to(first_value + second_value, base)
+    return translate_to(str(first_value + second_value), base)
 
 
 if __name__ == "__main__":
