@@ -14,10 +14,10 @@ def translate_to(value, base):
         res_float_part += config.enum_lit[(int(float_part * base))]
         float_part = float_part * base - int(float_part * base)
         i += 1
+    if res_int_part == "":
+        res_int_part = "0"
     if float("0." + res_float_part) != 0:
         return res_int_part[::-1] + "." + res_float_part
-    elif res_int_part == "" and res_float_part == "":
-        return "0"
     else:
         return res_int_part[::-1]
 
