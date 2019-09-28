@@ -36,7 +36,7 @@ def translate_from(value, base):
         i += 1
     res_float_part = 0
     i = 1
-    for number in float_part[:7]:
+    for number in float_part:
         res_float_part += config.enum[number] * pow(base, -i)
         i += 1
     return float(res_int_part + res_float_part)
