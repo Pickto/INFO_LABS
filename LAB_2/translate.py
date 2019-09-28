@@ -43,7 +43,7 @@ def translate_from(value, base):
 
 
 def translate_to_hex(number):
-    res_mantissa = ""
+    res_number = ""
     for i in range(0, len(number), 4):
-        res_mantissa += translate_to(translate_from(number[i:i+4], 2), 16)
-    return res_mantissa
+        res_number += config.enum_lit[translate_from(number[i:i+4], 2)]
+    return res_number
