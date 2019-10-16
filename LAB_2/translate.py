@@ -1,7 +1,7 @@
 import config
 
 
-def translate_to(value, base, count_sign):
+def translate_to(value, base, count_sign=6):
     int_part = int(float(value))
     float_part = float(value) - int_part
     res_int_part = ""
@@ -22,7 +22,7 @@ def translate_to(value, base, count_sign):
         return res_int_part[::-1]
 
 
-def translate_from(value, base, count_sign):
+def translate_from(value, base, count_sign=6):
     value = value.split(".")
     int_part = value[0]
     if len(value) > 1:
@@ -48,12 +48,18 @@ def translate_to_hex(number, byte):
         res_number += config.enum_lit[translate_from(number[i:i+4], 2, byte * 8)]
     return res_number
 
+def translate_from_hex(number):
+    res_number = ""
+    for i in number:
+        t = translate_to(translate_from(i, 16), 2)
+        res_number += "0"*(4 - len(t)) + t
+    return res_number
 
 def to_hexadecimal(number, byte):
     sign = "0"
     if number < 0:
         sign = "1"
-    number = translate_to(abs(number), 2, byte * 8)
+    number = translate_to(abs(number), 2, 100)
     if number[0] == "0":
         p = -number.find("1") + 1
         number = number[number.find("1")] + "." + number[number.find("1") + 1:]
@@ -74,12 +80,12 @@ def to_hexadecimal(number, byte):
 
 
 def from_hexadecimal(hex_number, byte):
-    binary_number = translate_to(translate_from(hex_number, 16, byte * 8), 2, byte * 8)
+    binary_number = translate_from_hex(hex_number)
     if len(binary_number) < byte * 8:
         binary_number = "0"*(byte * 8 - len(binary_number)) + binary_number
     if byte == 8:
         bit = 11
-    elif byte == 4:
+    else:
         bit = 8
     p = translate_from(binary_number[1:bit + 1], 2, byte * 8) - (2**(bit - 1) - 1)
     res_number = translate_from("1." + binary_number[bit + 1:],  2, byte * 8) * 2**p
@@ -87,3 +93,10 @@ def from_hexadecimal(hex_number, byte):
         return res_number
     else:
         return -res_number
+
+def sum(first_value, second_value, base):
+    if base == 10:
+        return int(first_value) + int(second_value)
+    first_value = translate_from(first_value, base)
+    second_value = translate_from(second_value, base)
+    return translate_to(str(first_value + second_value), base)

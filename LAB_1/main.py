@@ -7,11 +7,7 @@ def main():
         if command[0] == "to":
             print(translate_to(command[1], int(command[2])))
         elif command[0] == "from":
-<<<<<<< Updated upstream
             print(translate_from(command[1], int(command[2])))
-=======
-           print(translate_from(command[1], int(command[2])))
->>>>>>> Stashed changes
         elif command[0] == "calc":
             print(calc(command[1], command[3], int(command[4]), command[2]))
         elif command[0] == "quit":

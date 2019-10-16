@@ -2,7 +2,7 @@ import translate
 
 
 def main():
-    print(translate.from_hexadecimal("40339E0000000000", 8))
+    print(translate.from_hexadecimal("C07A31020C49BA5E", 8))
 
 
 
